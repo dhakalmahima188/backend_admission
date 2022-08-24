@@ -177,6 +177,6 @@ REST_FRAMEWORK = {
 #     os.environ.get('MY_URL', 'http://localhost:3000'),
 # ]
 CORS_ALLOWED_ORIGINS = [
-    "*",
-    os.environ.get('MY_URL', '*'),
+    "https://frontend-ioe.herokuapp.com/",
+    os.environ.get('MY_URL', 'https://frontend-ioe.herokuapp.com/'),
 ]
