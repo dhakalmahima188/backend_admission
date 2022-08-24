@@ -155,6 +155,9 @@ USE_TZ = True
 
 STATIC_URL = "/static/"
 
+
+STATIC_ROOT='/static/'
+
 # STATICFILES_DIRS = [
 #     os.path.join(BASE_DIR, 'frontend/src/static')]
 # Default primary key field type
@@ -168,7 +171,11 @@ REST_FRAMEWORK = {
     "PAGE_SIZE": 10,
 }
 
+# CORS_ALLOWED_ORIGINS = [
+#     "http://localhost:3000",
+#     os.environ.get('MY_URL', 'http://localhost:3000'),
+# ]
 CORS_ALLOWED_ORIGINS = [
-    "http://localhost:3000",
-    os.environ.get('MY_URL', 'http://localhost:3000'),
+    "*",
+    os.environ.get('MY_URL', '*'),
 ]
