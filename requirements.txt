@@ -34,3 +34,4 @@ sqlparse==0.4.1
 toml==0.10.2
 tomli==1.2.0
 uritemplate==3.0.1
+gunicorn==20.1.0
