@@ -157,6 +157,7 @@ STATIC_URL = "static/"
 
 
 STATIC_ROOT='/static/'
+#hehe
 
 # STATICFILES_DIRS = [
 #     os.path.join(BASE_DIR, 'frontend/src/static')]
