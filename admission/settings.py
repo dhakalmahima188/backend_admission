@@ -10,6 +10,7 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 
+from operator import truediv
 from pathlib import Path
 import os
 import environ
@@ -180,3 +181,6 @@ CORS_ALLOWED_ORIGINS = [
     "https://frontend-ioe.herokuapp.com/",
     os.environ.get('MY_URL', 'https://frontend-ioe.herokuapp.com/'),
 ]
+
+CORS_ALLOW_ALL_ORIGINS=True
+CORS_ALLOW_CREDIENTIALS=True
